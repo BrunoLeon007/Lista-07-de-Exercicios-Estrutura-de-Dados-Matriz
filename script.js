@@ -71,7 +71,7 @@ exercicio03.addEventListener("click", () => {
     for (let i = 0; i < 3; i++) {
         matriz[i] = [];
         for (let j = 0; j < 3; j++) {
-            let valor = parseInt(prompt(`Digite o número da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite o número referente a posição [${i}][${j}]:`));
             matriz[i][j] = valor;
             if (i === j) {
                 somaDiagonal += valor;
@@ -84,7 +84,7 @@ exercicio03.addEventListener("click", () => {
         res.innerHTML += matriz[i].join(" ");
     }
 
-    res.innerHTML += "<br>" + "Soma da diagonal principal: " + somaDiagonal;
+    res.innerHTML += "<br>" + "A soma da diagonal principal: " + somaDiagonal;
 })
 
 
@@ -99,7 +99,7 @@ exercicio04.addEventListener("click", () => {
     for (let i = 0; i < 2; i++) {
         matrizA[i] = [];
         for (let j = 0; j < 2; j++) {
-            let valor = parseInt(prompt(`Digite o valor da matriz A na posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor da matriz A na posição [${i}][${j}]:`));
             matrizA[i][j] = valor;
         }
     }
@@ -108,7 +108,7 @@ exercicio04.addEventListener("click", () => {
     for (let i = 0; i < 2; i++) {
         matrizB[i] = [];
         for (let j = 0; j < 2; j++) {
-            let valor = parseInt(prompt(`Digite o valor da matriz B na posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor da matriz B na posição [${i}][${j}]:`));
             matrizB[i][j] = valor;
         }
     }
@@ -144,7 +144,7 @@ exercicio05.addEventListener("click", () => {
     for (let i = 0; i < 3; i++) {
         matriz[i] = [];
         for (let j = 0; j < 3; j++) {
-            let valor = parseInt(prompt(`Digite o número da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite número da posição [${i}][${j}]:`));
             matriz[i][j] = valor;
 
             if (maior === null || valor > maior) {
@@ -172,7 +172,7 @@ exercicio06.addEventListener("click", () => {
     for (let i = 0; i < 4; i++) {
         matriz[i] = [];
         for (let j = 0; j < 4; j++) {
-            let valor = parseInt(prompt(`Digite o número da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite número da posição [${i}][${j}]:`));
             matriz[i][j] = valor;
             soma += valor;
         }
@@ -200,7 +200,7 @@ exercicio07.addEventListener("click", () => {
     for (let i = 0; i < 2; i++) {
         A[i] = [];
         for (let j = 0; j < 2; j++) {
-            let valor = parseInt(prompt(`Digite o valor de A[${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor de A[${i}][${j}]:`));
             A[i][j] = valor;
         }
     }
@@ -209,7 +209,7 @@ exercicio07.addEventListener("click", () => {
     for (let i = 0; i < 2; i++) {
         B[i] = [];
         for (let j = 0; j < 2; j++) {
-            let valor = parseInt(prompt(`Digite o valor de B[${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor de B[${i}][${j}]:`));
             B[i][j] = valor;
         }
     }
@@ -245,7 +245,7 @@ exercicio08.addEventListener("click", () => {
     for (let i = 0; i < 3; i++) {
         matriz[i] = [];
         for (let j = 0; j < 3; j++) {
-            let valor = parseInt(prompt(`Digite o valor da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor da posição [${i}][${j}]:`));
             matriz[i][j] = valor;
 
             if (menor === null || valor < menor) {
@@ -273,7 +273,7 @@ exercicio09.addEventListener("click", () => {
     for (let i = 0; i < 3; i++) {
         matriz[i] = [];
         for (let j = 0; j < 3; j++) {
-            let valor = parseInt(prompt(`Digite o valor da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor da posição [${i}][${j}]:`));
             matriz[i][j] = valor;
         }
     }
@@ -314,7 +314,7 @@ exercicio10.addEventListener("click", () => {
     for (let i = 0; i < 4; i++) {
         matriz[i] = [];
         for (let j = 0; j < 4; j++) {
-            let valor = parseInt(prompt(`Digite o valor da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor da posição [${i}][${j}]:`));
             matriz[i][j] = valor;
             somaColunas[j] += valor;
         }
@@ -345,7 +345,7 @@ exercicio11.addEventListener("click", () => {
     for (let i = 0; i < 2; i++) {
         A[i] = [];
         for (let j = 0; j < 2; j++) {
-            let valor = parseInt(prompt(`Digite o valor de A[${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor de A[${i}][${j}]:`));
             A[i][j] = valor;
         }
     }
@@ -354,7 +354,7 @@ exercicio11.addEventListener("click", () => {
     for (let i = 0; i < 2; i++) {
         B[i] = [];
         for (let j = 0; j < 2; j++) {
-            let valor = parseInt(prompt(`Digite o valor de B[${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor de B[${i}][${j}]:`));
             B[i][j] = valor;
         }
     }
@@ -398,7 +398,7 @@ exercicio12.addEventListener("click", () => {
     for (let i = 0; i < 3; i++) {
         matriz[i] = [];
         for (let j = 0; j < 3; j++) {
-            let valor = parseInt(prompt(`Digite o valor da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor da posição [${i}][${j}]:`));
             matriz[i][j] = valor;
         }
     }
@@ -440,7 +440,6 @@ exercicio13.addEventListener("click", () => {
         maiores.push(maiorLinha);
     }
 
-    // Exibição da matriz
     res.innerHTML += "Matriz 4x4: ";
     for (let i = 0; i < 4; i++) {
         res.innerHTML += matriz[i].join(" ");
@@ -464,7 +463,7 @@ exercicio14.addEventListener("click", () => {
     for (let i = 0; i < 3; i++) {
         matriz[i] = [];
         for (let j = 0; j < 3; j++) {
-            let valor = parseInt(prompt(`Digite o valor da posição [${i}][${j}]:`));
+            let valor = parseInt(prompt(`Digite valor da posição [${i}][${j}]:`));
             matriz[i][j] = valor;
 
             if (i === j && valor !== 1) {
@@ -535,4 +534,5 @@ exercicio15.addEventListener("click", () => {
     res.innerHTML += "<br>" + "Subtração A - B: ";
     res.innerHTML += C[0].join(" ");
     res.innerHTML += C[1].join(" ");
+
 })
